@@ -1,0 +1,10 @@
+ite:
+  build: site
+  ports :
+   - "4300:80"
+websocket:
+  build: websocket
+  ports :
+   - "8081:8081"
+  volumes:
+   - ./info.log:/root/info.log
